@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "calc-replica-testing"
-  }
+    "default": "testing-replica-c4e19",
+    "testing": "testing-replica-c4e19"
+  },
+  "targets": {},
+  "etags": {}
 }
