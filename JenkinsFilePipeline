@@ -24,13 +24,13 @@ pipeline{
 
         stage('Staging'){
             steps{
-            sh 'firebase deploy -P calc-replica-staging --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P Staging-replica --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
 
         stage('Production'){
             steps{
-            sh 'firebase deploy -P calc-replica-production --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P Production-replica --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
     }
